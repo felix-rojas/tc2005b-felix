@@ -10,8 +10,9 @@ Existen 3 niveles de estilo:
    2. Al darle mantenimiento se puede perder
 3. Estilo externo
    1.En la etiqueta link y atributo rel ponemos la ruta de la guía de estilos
-```
-{<link rel="stylesheet" href="style.css">}
+
+```html
+<link rel="stylesheet" href="style.css">
 ```
 ### Pseudoclases
 Permiten codificar al documento sin programarlo en js
