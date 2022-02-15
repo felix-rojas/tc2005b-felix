@@ -15,5 +15,13 @@ Existen 3 niveles de estilo:
 <link rel="stylesheet" href="style.css">
 ´´´
 
+### Pseudoclases
+Permiten codificar al documento sin programarlo en js
+
 ### Recomendaciones
 Utilizar fuentes sin serifas en pantallas 
+Etiquetas personalizadas
+Un id por documento
+
+### Diseño web en 4 mins.
+https://jgthms.com/web-design-in-4-minutes/
