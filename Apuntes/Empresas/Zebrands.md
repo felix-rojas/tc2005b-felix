@@ -1,7 +1,7 @@
 ### Grupo Zebrands
 ##### Contacto
 Bernardo Laing 
-bernardo.laing.zeb.mx
+bernardo.laing@zeb.mx
 
 #### Recolección de feedback
 #### Contexto

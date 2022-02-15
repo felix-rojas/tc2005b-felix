@@ -4,7 +4,7 @@ Para dispatch health con Bernardo Gómez
 #### Contexto
 Utiliza jira service para dar seguimiento https://www.atlassian.com/es/software/jira/service-management/features/service-desk
 1. Gestión de tickets de soporte
-2. CAtegorización de incidencias
+2. Categorización de incidencias
 3. Seguimiento de tickets por status
 	1. Máximo 3 días de resolución
 	2. Establece la resolución del problema y su categoría en importancia

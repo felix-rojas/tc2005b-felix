@@ -6,7 +6,7 @@ MAuricio Hernández
 Ing en sistemas computacionales
 4 años en gestión de proyectos de software
 
-MAnuel flores
+Manuel Flores
 Ingeniero en sistemas computacionales
 Project MAnager ti
 
@@ -19,7 +19,7 @@ Departamento de tecnologías de NATGAS
 Proyectos:
 * TUCUENTA 
 * OASIS 
-* impúlsate 
+* Impúlsate 
 * Orígenes
 
 EL departamento de talento y comunicación no posee un canal oficial ni los recursos suficientes para poder solucionar la problemática

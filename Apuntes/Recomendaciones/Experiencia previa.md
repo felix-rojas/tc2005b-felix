@@ -7,7 +7,7 @@ El problema que tenían era excel y realizar la migración de datos entre excel 
 3. DIseño deinterfaz
 4. Implementación de conección con APIs
 5. Pruebas 
-	6. Bastante tiempo de pruebas
+	5a. Bastante tiempo de pruebas
 6. Despliegue
 
 La aplicación que utilizaron fue una aplicación web
@@ -20,13 +20,13 @@ Las actividades van a estar casi siempre determinadas por el número de casos de
 Pocas veces las empresas generan software para sí mismos y solucionar problemas de organización 
 
 #### Lo bueno
-COmplementario
-COmunicativo
+Complementario
+Comunicativo
 Ambiente de trabajo
-SInergia
+Sinergia
 
 #### Lo malo
-MAlos horarios de trabajos
+Malos horarios de trabajos
 Subestimación de tiempos y trabajos
 - Creyeron que las gráficas eran lo más sencillo de esfuerzo colaborativo
 	- Les tomó casi una semana en esfuerzo colaborativo
