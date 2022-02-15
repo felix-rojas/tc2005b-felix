@@ -10,13 +10,13 @@ En la sección de apuntes encontrarán los apuntes que he hecho de la clase
 Las notas son diversas y un poco desordenadas
 Espero les sirva mucho como a mí
 
-## Laboratorios
+## [Laboratorios](/Laboratorios)
 Aquí están las prácticas de los laboratorios de clase, cada uno está separado en su propia carpeta de acuerdo a su número
 
-## Bitácora de incidentes
+## [Bitácora de incidentes](incidentes.md) 
 EL formato es como sigue:
 >(dd/mmm/aa) - Descripción del incidente - Plan de acción
 
-## Bitácora de intereses
+## [Bitácora de intereses](itereses.md)
 Formato similar, pero describe intereses particulares surgidos en clase/fuera
 >(dd/mmm/aa) - Descripción del interés - Plan de acción
