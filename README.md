@@ -13,8 +13,11 @@ Problemas que los otros equipos enfrentaron, recomendaciones generales del proye
 Aquí están las prácticas de los laboratorios de clase, cada uno está separado en su propia carpeta de acuerdo a su número
 
 ## [Bitácora de incidentes](incidentes.md) 
-EL formato es como sigue:
->(dd/mmm/aaaa) - Descripción del incidente - Plan de acción - Resolución [  ]
+El formato es:
+>(dd/mmm/aaaa) - Descripción del incidente - Plan de acción - Resolución (dd/mmm/aaaa)
+
+Plan de acción es una acción específica a tomar para solucionar o mitigar el incidente ocurrido.</br> 
+La casilla de resolución marca la fecha de resolución del problema, NA si no aplica  
 
 ## [Bitácora de intereses](itereses.md)
 Formato similar, pero describe intereses particulares surgidos en clase/fuera
