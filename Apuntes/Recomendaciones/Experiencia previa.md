@@ -3,8 +3,8 @@ Trabajaron con NatGas en NatDev
 El problema que tenían era excel y realizar la migración de datos entre excel  y airtable
 
 1. Identificar la necesidad y materiales necesarios
-2. ANálisis del problema
-3. DIseño deinterfaz
+2. Análisis del problema
+3. Diseño deinterfaz
 4. Implementación de conección con APIs
 5. Pruebas 
 	5a. Bastante tiempo de pruebas
@@ -81,8 +81,8 @@ Airtable te permite realizar bases de datos y división de los proyectos
 #### Entrenamiento de usuarios
 Realizaron manual en videos y en PDF de paso a paso de cómo a utilizar el sistema de manera sencilla e intuitiva
 
-### problemas fuertes
-EN las fechas no cuadraban y necesitaron 
+### Problemas fuertes
+En las fechas no cuadraban y necesitaron 
 COmunicación con la API fue un problema la parte de 
 Interacción 
 POngan buenos nombres a sus variables

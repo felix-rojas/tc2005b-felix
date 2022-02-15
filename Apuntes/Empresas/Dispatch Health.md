@@ -2,7 +2,8 @@
 Para dispatch health con Bernardo Gómez
 
 #### Contexto
-Utiliza jira service para dar seguimiento https://www.atlassian.com/es/software/jira/service-management/features/service-desk
+Utilizan "jira service" para dar seguimiento 
+https://www.atlassian.com/es/software/jira/service-management/features/service-desk
 1. Gestión de tickets de soporte
 2. Categorización de incidencias
 3. Seguimiento de tickets por status
