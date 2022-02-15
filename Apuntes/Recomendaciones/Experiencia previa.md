@@ -8,7 +8,7 @@ El problema que tenían era excel y realizar la migración de datos entre excel 
 4. Implementación de conección con APIs
 5. Pruebas 
 	5a. Bastante tiempo de pruebas
-6. Despliegueº
+6. Despliegue
 
 La aplicación que utilizaron fue una aplicación web
 Ingreso al sistema, dashboard. Investigar node JS.
