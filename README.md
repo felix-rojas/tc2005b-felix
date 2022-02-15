@@ -7,12 +7,12 @@ Félix Javier Rojas Gallardo </br>
 
 ## [Apuntes](/Apuntes) 
 En la sección de apuntes encontrarán los apuntes que he hecho de la clase
-Las notas son diversas y un poco desordenadas
+Las notas son diversas y un poco desordenadas pero trataré de ponerlas en folder por cada tema visto
 Espero les sirva mucho como a mí
 ### [Empresas](/Apuntes/Empresas)
 Aquí se encuentran notas diversas sobre las empresas que presentaron
-### [REcomendaciones](/Apuntes/Recomendaciones)
-Problemas que los otros equipos enfrentaron, recomendaciones generales del proyecto y otras notas adicionales
+### [Recomendaciones](/Apuntes/Recomendaciones)
+Problemas que los otros equipos enfrentaron, recomendaciones generales del proyecto y otras notas adicionales.
 ## [Laboratorios](/Laboratorios)
 Aquí están las prácticas de los laboratorios de clase, cada uno está separado en su propia carpeta de acuerdo a su número
 
