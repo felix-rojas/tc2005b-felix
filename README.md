@@ -5,11 +5,14 @@ Félix Javier Rojas Gallardo </br>
 *Correo:* A01201946@tec.mx </br>
 *Tel*: 461 421 8588 </br>
 
-## Apuntes 
+## [Apuntes](/Apuntes) 
 En la sección de apuntes encontrarán los apuntes que he hecho de la clase
 Las notas son diversas y un poco desordenadas
 Espero les sirva mucho como a mí
-
+### [Empresas](/Apuntes/Empresas)
+Aquí se encuentran notas diversas sobre las empresas que presentaron
+### [REcomendaciones](/Apuntes/Recomendaciones)
+Problemas que los otros equipos enfrentaron, recomendaciones generales del proyecto y otras notas adicionales
 ## [Laboratorios](/Laboratorios)
 Aquí están las prácticas de los laboratorios de clase, cada uno está separado en su propia carpeta de acuerdo a su número
 
