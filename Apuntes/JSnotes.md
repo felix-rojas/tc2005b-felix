@@ -70,3 +70,27 @@ La función `document.getElementById()` nos permite modificar un elemento de la 
 document.getElementById("body").onclick =  modern_apology;
 document.getElementById("body").onclick = () =>  confirm("Stop that");
 ```
+
+## Modificación dinámica
+
+Revisar el repositorio "cerveza"
+
+## Array
+
+Cuando declaras a un arreglo con js puedes ponerle cualquier nombre
+
+```javascript
+const Numbers = ["One"];
+Numbers.push("Two");
+Numbers[3] = "Three";
+Numbers[8] = "Eight"
+Numbers["Four"] = "Four";
+
+// prints array without for loop
+console.log( Numbers );
+
+// prints the entire array, skipping all empty places and adapts dynamically
+for (let i in Numbers){
+    console.log(i);
+}
+```
