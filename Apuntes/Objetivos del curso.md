@@ -1,20 +1,20 @@
-### Aplicaciones a desarrollar
+# Objetivos del curso
 
-Aplicación web
-Aplicación móviles
-No vamos a ver **aplicaciones de escritorio**
+## Aplicaciones a desarrollar
+
+1. Aplicación web
+2. Aplicación móviles
+
+>No vamos a ver **aplicaciones de escritorio**
 
 ### Bases de datos a desarrollar
 
-Base de datos relacionales son las más prácticas en el registro de transacciones de la empresa.
-
-#### Objetivo del curso
-
-Usar un gestor de base relacional porque el 80% lo utiliza
+Base de datos **relacionales** 
+>Son las más prácticas en el registro de transacciones de la empresa.
 
 ## Pasos en el semestre
 
-#### Ingeniería de software
+### Ingeniería de software
 
 * Identificar la necesidad
 * Propuesta de solución
