@@ -7,9 +7,10 @@
 ### Diagrama de casos de uso
 
 Utilizamos el diagrama, recuerda sus tres elementos:
-    1.  Actores
-    2.  as
-    3.  asd
+
+1. Actores
+2. Casos
+3. Extensiones
 
 ### No funcionales
 
