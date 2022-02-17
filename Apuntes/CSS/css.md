@@ -1,6 +1,9 @@
 # CSS
-### Niveles de Estilo
+
+## Niveles de Estilo
+
 Existen 3 niveles de estilo:
+
 1. Estilos en línea
    1. Para dar mantenimiento, el código es más difícil de leer
    2. Es bueno para modificar una parte en específico del sitio web
@@ -14,14 +17,18 @@ Existen 3 niveles de estilo:
 ```html
 <link rel="stylesheet" href="style.css">
 ```
+
 ### Pseudoclases
+
 Permiten codificar al documento sin programarlo en js
 
 ### Recomendaciones
-Utilizar fuentes sin serifas en pantallas 
+
+Utilizar fuentes sin serifas en pantallas
 Etiquetas personalizadas
 Un id por documento
-CENTRA EL SITIO WEB POR FAVOR 
+CENTRA EL SITIO WEB POR FAVOR
 
-### Diseño web en 4 mins.
-https://jgthms.com/web-design-in-4-minutes/
+### Diseño web en 4 mins
+
+<https://jgthms.com/web-design-in-4-minutes/>

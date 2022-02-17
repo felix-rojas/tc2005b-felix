@@ -1,6 +1,9 @@
-## Sistemas de información
+# Sistemas de información
 
-###Tareas
+## Tareas
+
 ¿Qué es un CRM?
+
 ## CRM
+
 El CRM es el Customer Relationships Management
