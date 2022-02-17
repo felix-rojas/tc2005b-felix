@@ -43,3 +43,10 @@ Ellos tienen un perfil tecnológico, **aprovéchenlos**
 
 Eran preguntas que no era para nada sobre técnicos. Los proyectos no salieron tan bien en ese entonces.
 **Este tipo de proyectos son los que abren camino**
+
+## Notas a considerar
+
+- El producto debe de estar casi completo en la **semana 9**.
+- Todo es realizado con el socio formador, determinando la necesidad del cliente.
+- A partir de la semana 7 sólo se pueden solicitar 3 más competencias.
+- Verificar los requisitos con el socio formador

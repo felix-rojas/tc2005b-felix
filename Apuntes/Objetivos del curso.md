@@ -9,7 +9,7 @@
 
 ### Bases de datos a desarrollar
 
-Base de datos **relacionales** 
+Base de datos **relacionales**
 >Son las más prácticas en el registro de transacciones de la empresa.
 
 ## Pasos en el semestre

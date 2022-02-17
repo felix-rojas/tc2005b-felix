@@ -25,7 +25,7 @@ Elaborar un documento para establecer su despacho de consultoría en Construcci�
 
 >Identificarás de manera general los catálogos que le darán soporte al sistema de información. Al respecto se espera que identifiques de manera completa campos y posibles relaciones entre los catálogos.
 
-### Plan de trabajo y aprendizaje adquirido (1 punto) :
+### Plan de trabajo y aprendizaje adquirido (1 punto)
 
 **En TODAS sus presentaciones deben incluir el plan de trabajo actualizado y el aprendizaje adquirido como equipo.**
 
