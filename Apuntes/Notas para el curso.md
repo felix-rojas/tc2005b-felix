@@ -19,7 +19,7 @@ Temas en la clase que surjan que nos interesen y registrar acciones relacionadas
 
 ### [Bitácora de incidentes](/incidentes)
 
-Registramos para hacernos responsable con el aprendizaje de la clase. Se fue la luz, etc... 
+Registramos para hacernos responsable con el aprendizaje de la clase. Se fue la luz, etc...
 
 Deben de ser registradas:
 
