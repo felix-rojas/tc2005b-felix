@@ -2,28 +2,35 @@
 
 ## Agenda
 
-### Calendario de actividades
+### [Calendario de actividades](<https://ejuarez.bitbucket.io/tec21/grupo1.html>)
 
-El link debajo tiene todas las actividades planeadas
+Todas las actividades planeadas del curso están organizadas con su contenido de aprendizaje.
 
-<https://ejuarez.bitbucket.io/tec21/grupo1.html>
+> Login no es necesario
 
-## Malla de evaluación
+## [Malla de evaluación](<https://docs.google.com/spreadsheets/d/1psFBbvopeuIo5mF1s6gwZRnSSuFhTPtYXdzlmQGg0U0/edit#gid=1396029396>)
 
 Sirve para dar seguimiento al proyecto y de las clases, los campos se llenan con la semana en la que se completó la actividad.
 >Mentir en la malla es deshonestidad académica
 
-### Bitácora de intereses
+### [Bitácora de intereses](/intereses)
 
 Temas en la clase que surjan que nos interesen y registrar acciones relacionadas a profundizar
 
-### Bitácora de incidentes
+### [Bitácora de incidentes](/incidentes)
 
-Registramos para hacernos responsable con el aprendizaje de la clase. Se fue la luz, etc... Deben de ser registradas con fecha, descripción del incidente y resolución al problema.
+Registramos para hacernos responsable con el aprendizaje de la clase. Se fue la luz, etc... 
+
+Deben de ser registradas:
+
+Fecha | Incidente | Plan de acción | Resolución
+|---|---|---|---|
+|dd/MMM/aaaa|---|---|---|
 
 #### Flexibilidad de entregas
 
-Tenemos control completo sobre nuestras actividades y entregas sin embargo, esto acumula las responsabilidades. nunca retrasarse más del 15% es la recomendación
+Tenemos control completo sobre nuestras actividades y entregas sin embargo, esto acumula las responsabilidades.
+> Nunca retrasarse más del 15%
 
 ## Socios formadores
 
