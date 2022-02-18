@@ -17,17 +17,20 @@ PArtners with QroBUs
 ### NATDEV
 Departamento de tecnologías de NATGAS 
 Proyectos:
-* TUCUENTA 
-* OASIS 
-* Impúlsate 
-* Orígenes
+
+- TUCUENTA
+- OASIS
+- Impúlsate
+- Orígenes
 
 EL departamento de talento y comunicación no posee un canal oficial ni los recursos suficientes para poder solucionar la problemática
 
-### Problemática 
+### Problemática
+
 Portal de control interno con todos los colaboradores de la empresa.
 
-##### Necesidades principales
+### Necesidades principales
+
 * Noticias generales
 * Aniversarios
 * Cumpleaños
@@ -35,7 +38,7 @@ Portal de control interno con todos los colaboradores de la empresa.
 * Usuarios
 * Acceso a las plataformas de natgas
 * Usuarios
-* BLog de anuncios
+* Blog de anuncios
 * Reportes mensuales
 * Control de permisos
 * COntrol de vacaciones 
@@ -47,8 +50,8 @@ SESIONES
 BLOG DE ANUNCIOS
 
 REPORTES MENSUALES
-	Portal con indicadores de éxito
-	Net Promoter Score
+* Portal con indicadores de éxito
+* Net Promoter Score
 
 CUMPLEAÑOS
 VACACIONES
@@ -66,7 +69,8 @@ PROGRAMAS NATGAS
 OBJETIVOS ANUALES
 El correo es considerado un modo ineficiente de comunicación por 
 
-**INDISPENSABLE**
+## INDISPENSABLE
+
 * SESIONES
 * USUARIOS
 * CONTROL DE PERMISOS
@@ -74,8 +78,8 @@ El correo es considerado un modo ineficiente de comunicación por
 * ACCESO DIRECTO A PLATAFORMAS NATGAS
 * REPORTES MENSUALES DE LA COMPAÑÍA
 
-*Deseables*
-* Noticias generales, banne
+## *Deseable*
+* Noticias generales, banner
 * Blog de anuncios
 * Cumpleaños
 * Aniversarios
@@ -86,3 +90,4 @@ El correo es considerado un modo ineficiente de comunicación por
 parroyo@natgas.com.mx
 msiles@natgas.com.mx
 maflores@natgas.com.mx
+
