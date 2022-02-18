@@ -15,7 +15,8 @@ GAs natural vehicular fundada en 2012 y su principal cliente son los taxistas. D
 PArtners with QroBUs
 
 ### NATDEV
-Departamento de tecnologías de NATGAS 
+
+Departamento de tecnologías de NATGAS
 Proyectos:
 
 - TUCUENTA
@@ -34,16 +35,15 @@ Portal de control interno con todos los colaboradores de la empresa.
 * Noticias generales
 * Aniversarios
 * Cumpleaños
-* Sesiones 
+* Sesiones
 * Usuarios
 * Acceso a las plataformas de natgas
 * Usuarios
-* Blog de anuncios
 * Reportes mensuales
 * Control de permisos
-* COntrol de vacaciones 
+* COntrol de vacaciones
 * Blog de anuncios
-* Objetivos 
+* Objetivos
 
 USUARIOS
 SESIONES
@@ -89,5 +89,8 @@ El correo es considerado un modo ineficiente de comunicación por
 ### Info de contacto
 parroyo@natgas.com.mx
 msiles@natgas.com.mx
+
+Propuestas de interfaz
+
 maflores@natgas.com.mx
 

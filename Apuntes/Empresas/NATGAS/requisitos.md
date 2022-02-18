@@ -1,5 +1,25 @@
 # Requisitos de empresa
 
+400 empleados en total
+
+## Objetivo principal
+
+Unificar el canal de RH con todos los demás, como un canal masivo.
+
+### Fuera del alcance
+
+Chat corporativo
+
+## Colores y logos
+
+Usar los que nos provean en la documentación
+
+## Empleados
+
+Líderes
+
+
+
 ## Recursos humanos
 
 El eqipo de recursos humanos ya tiene control de nóminas y pagos con SAP
@@ -29,6 +49,14 @@ El sitio web se ocmpone de dos partes:
 
 No es útil que si al poner un módulo
 
+### Usuarios máximos concurrentes
+
+El máximo número de personas concurrentes son 200 personas por ahora
+
+En promedio el tope son 100
+
+El rango de 100 a 1000 no afecta
+
 ## INDISPENSABLE
 
 * SESIONES y CONTROL DE PERMISOS
@@ -37,6 +65,7 @@ No es útil que si al poner un módulo
     * Interfaz entre usuario y plataforma
     * La parte complicada del RBAC ya está gestionada con Auth0
     * **Ellos recomiendan hacer esto**
+    * No se pueden crear multiples roles al mismo
 * USUARIOS
 NatGas blocks son medios días de vacaciones para poder realizar permisos y comunicarlos para poder realizar exámenes, transacci  ones, etc.
 * CONTROL DE VACACIONES
@@ -59,6 +88,20 @@ NatGas blocks son medios días de vacaciones para poder realizar permisos y comu
 ## Objetivo sesión
 
 Platicar sobre el proyecto, tomar notas, tiempos, scope de las cosas
+
+## Comunicaciones
+
+AWS *cada correo* tiene el precio de 20 centavos
+
+Si está mal implementado cada mensaje cuesta, preguntar con el especialista de seguridad.
+
+## Base de datos
+
+Debe de ser relacional
+
+Ellos utilizan google cloud
+
+Todo lo podemos hacer en local
 
 ### Info de contacto
 
