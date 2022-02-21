@@ -57,7 +57,22 @@ Aquí se autoriza un proyecto o fase del proyecto de manera formalizada.
 4.Confirmar alineación con los objetivos estratégicos de la empresa
 5.Asignar un jefe de proyecto
 
+### Formalización
+
+Tiene que estar claro:
+
+- Objetivos
+- Restricciones
+- Criterios de éxito
+- Supuestos
+- Asignar roles y responsabilidades a los principales participantes
+
 ## Planificación del alcance
+
+- Justificación del proyecto
+- Producto del proyecto
+- Entregables del proyecto
+- Objetivos del proyecto (SMART)
 
 ## Definición del alcance
 

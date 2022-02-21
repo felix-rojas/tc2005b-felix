@@ -95,6 +95,4 @@ El correo es considerado un modo ineficiente de comunicación por
 parroyo@natgas.com.mx
 msiles@natgas.com.mx
 
-**Propuestas de interfaz**
-
-maflores@natgas.com.mx
+**Propuestas de interfaz** enviar a maflores@natgas.com.mx

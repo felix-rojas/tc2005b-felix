@@ -13,4 +13,3 @@ Garantía
 Tener listo en semana oho para asegurarse
 
 Tipo de licencia para el código
-
