@@ -6,4 +6,11 @@ The DOM an be interfaced through the document by using functions like getElemeen
 
 ### Good practice
 
-Make everything step by step and verify each one of them. It's easier to develop faster when trying to find errors.
+>Research code smells
+
+-Make everything step by step and verify each one of them. It's easier to develop faster when trying to find errors.
+-The "alt" attribute is absolutely necesary for accesibility and should *ALWAYS* be used
+-Three strike rule: If this is the **third** time you are writing it, **refactor** the code
+-Take a 10/15 minute break to refactorize code
+-Only refactorize after code is more functional, not when it just worked
+-Quality code is EASY to modify
