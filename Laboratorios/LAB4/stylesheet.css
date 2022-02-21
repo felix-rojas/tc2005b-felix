@@ -32,6 +32,8 @@ textarea {
   background-color: #272d33;
 }
 
+textarea:hover {background-color: black;}
+
 table,
 th,
 td {
