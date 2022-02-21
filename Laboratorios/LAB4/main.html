@@ -8,18 +8,18 @@
 </head>
 
 <body>
-  
+
   <header>
     <h1>Ejemplo de HTML5</h1>
     <textarea id="textBox" onclick="clearContent()">Escriba cualquier texto...</textarea>
   </header>
- 
+
   <button onclick="dispMsg()">Enviar "de mentis"</button>
   <p>
     Aquí podemos simplemente introducir cualquier texto antes
     de la ejecución de las etiquetas de tabla.
   </p>
-  
+
   <table>
     <caption>Tabla ejemplo</caption>
     <tr>
@@ -43,14 +43,24 @@
       <td>Elemento 3,3</td>
     </tr>
   </table>
-  
-  <footer>
-    <h3>Información de contacto</h3>
-    <p>Félix Javier Rojas Gallardo<br/></p>
-    A01201946@tec.mx<br/><br/>
-    <a href="https://github.com/felix-rojas" target="_blank">Github</a>
-  </footer>
-  
+
+  <table id="primeTable" border="1">
+  </table>
+  <form>
+    <input type="button" onclick="tableGen()" value="Create prime table">
+  </form>
+</body>
+
+</html>
+
+
+<footer>
+  <h3>Información de contacto</h3>
+  <p>Félix Javier Rojas Gallardo<br /></p>
+  A01201946@tec.mx<br /><br />
+  <a href="https://github.com/felix-rojas" target="_blank">Github</a>
+</footer>
+
 </body>
 
 <script src="test.js"></script>
