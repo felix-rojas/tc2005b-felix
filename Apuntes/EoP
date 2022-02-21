@@ -14,3 +14,4 @@ The DOM an be interfaced through the document by using functions like getElemeen
 -Take a 10/15 minute break to refactorize code
 -Only refactorize after code is more functional, not when it just worked
 -Quality code is EASY to modify
+-Use onkeyup preferrably when listening to keyboard events to avoid bugs. onkeydown it stays behind so it doesn't show the current input.
