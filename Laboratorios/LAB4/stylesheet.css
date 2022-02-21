@@ -1,23 +1,24 @@
 button {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
-      Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
-      'Helvetica Neue', sans-serif;
     font-size: small;
     border: 0.5px solid gray
   }
 
 body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+  'Helvetica Neue', sans-serif;
   text-align: center;
-  color: rgb(26, 22, 22);
+  color: rgb(149, 145, 141);
   margin-left: auto;
   margin-right: auto;
+  background-color: #272d33;
 }
 
 h1 {
   font-size: xx-large;
 }
 
-h1:hover {color:darkmagenta}
+h1:hover {color:rgb(28, 79, 92)}
 
 p {
   font-family: -apple-system, BlinkMacSystemFont,
@@ -27,7 +28,8 @@ p {
 
 textarea {
   font-size: small;
-  color: grey;
+  color: rgb(149, 145, 141);
+  background-color: #272d33;
 }
 
 table,
@@ -40,10 +42,11 @@ td {
 }
 
 footer {
-  text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
-    'Helvetica Neue', sans-serif;
+  text-align: center;  
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
   font-size: small;
   border: 0.5px solid gray
 }

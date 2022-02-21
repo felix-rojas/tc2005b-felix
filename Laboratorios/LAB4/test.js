@@ -5,5 +5,6 @@ function dispMsg() {
   }
 
   function clearContent() {
-    document.getElementsByTagName('textarea').innerHTML = ""
-  }
+    var textarea = document.getElementById('textBox');
+    textarea.value = "";
+} 
