@@ -16,14 +16,19 @@ La definición de todos los objetivos deben de ser:
 4.**R**elevant
 5.**T**imely
 
-En el alcnace de proyecto se debe integrar una misma visualización del proyecto pata poder entregar como resultado.
+En el alcance de proyecto se debe integrar una misma visualización del proyecto pata poder entregar como resultado.
 
 ### Alcance de proyecto vs alcance de producto
 
 #### Producto
 
 - Características o funciones del producto y/o servicio
-- Finalización con éxito usando la verificación de los requisitos de software 
+- Finalización con éxito es determinada *usando* la verificación de los *requisitos de software* 
+
+#### Proyecto
+
+- Trabajo o tareas a realizar para entregar el producto con las funciones solicitadas
+- Se verifica con el plan de proyecto
 
 ## Iniciación
 
@@ -36,6 +41,8 @@ Aquí se autoriza un proyecto o fase del proyecto de manera formalizada.
 ## Planificación del alcance
 
 ## Definición del alcance
+
+Desarrollo de un enunciado del alcance como base para decisiones futuras
 
 ## Verificación del alcance
 
