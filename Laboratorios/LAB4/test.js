@@ -6,7 +6,8 @@ function dispMsg() {
 
 function clearContent() {
     var textarea = document.getElementById('textBox');
-    textarea.value = "";
+    var empty = "";
+    textarea.value = empty;
 }
 
 function tableGen()

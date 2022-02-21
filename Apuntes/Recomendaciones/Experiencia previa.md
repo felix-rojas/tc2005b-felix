@@ -105,6 +105,7 @@ Hagan contactos
 1. En las fechas no cuadraban y necesitaron realizar ajustes y trabajar extra
 2. Comunicación con la API fue un problema la parte del proyecto
 3. Interacción
-4. POngan buenos nombres a sus variables
+4. Pongan buenos nombres a sus variables
 5. En la base de datos usaron un servicio gratuito que les dejó de funcionar de repente
 6. Usaban DATAGRID para la administración de la base de datos
+7. Registrar tiempos de actividades

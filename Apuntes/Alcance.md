@@ -23,7 +23,7 @@ En el alcance de proyecto se debe integrar una misma visualización del proyecto
 #### Producto
 
 - Características o funciones del producto y/o servicio
-- Finalización con éxito es determinada *usando* la verificación de los *requisitos de software* 
+- Finalización con éxito es determinada *usando* la verificación de los *requisitos de software*
 
 > Los productos llevan **pruebas de aceptación** para verificar que realmente es lo que especifica ser. Como el software es intangible, es difícil realizarlo de manera manual por lo que se deben de enlistar en el documento de requisitos de software. Recuerda que el cliente no realiza las pruebas. Lo ideal es que los desarrolladors busquen las fallas *antes* de que lleguen al usuario final. El usuario no debe de convertirse en el sujeto de prueba.
 

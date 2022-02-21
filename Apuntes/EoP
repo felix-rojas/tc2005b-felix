@@ -1,0 +1,9 @@
+# Event oriented programming
+
+## DOM
+
+The DOM an be interfaced through the document by using functions like getElemeent. ou can see the dom within the Website inspector.
+
+### Good practice
+
+Make everything step by step and verify each one of them. It's easier to develop faster when trying to find errors.
