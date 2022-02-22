@@ -15,3 +15,5 @@
 ### Conflicts
 
 The only conflicts that git will notify you about are the ones where the same line of code is modified and merged into another branch that also fixed that
+
+> we dont talk about the other branch
