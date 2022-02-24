@@ -11,6 +11,8 @@ We will be using NODE.js for this laboratory.
 
 ## What is NODE.js
 
+INstalling Node js installs the NPM (node package manager)
 Node js is a running environment that runs in JS and it is executed in out computer.
 You can now create files that can be read in your computer as well as your browser.
 
+Files that run in the browser are located in the frontend folder
