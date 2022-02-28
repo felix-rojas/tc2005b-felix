@@ -28,7 +28,7 @@ El formato es:
 Plan de acción es una acción específica a tomar para solucionar o mitigar el incidente ocurrido.</br> 
 La casilla de resolución marca la fecha de resolución del problema, NA si no aplica  
 
-## [Bitácora de intereses](itereses.md)
+## [Bitácora de intereses](intereses.md)
 
 Formato similar, pero describe intereses particulares surgidos en clase/fuera
 >(dd/mmm/aaaa) - Descripción del interés - Plan de acción
