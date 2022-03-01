@@ -6,6 +6,7 @@
 
 ```powershell
 npm install --save-dev nodemon
+npm install --save express
 ```
 
 Thankfully if you install locally, you'll be able to see the changes in versions to see when a update made it break.
