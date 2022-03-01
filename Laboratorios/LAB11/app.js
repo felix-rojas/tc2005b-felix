@@ -9,9 +9,16 @@ app.use((request, response, next) => {
     next(); 
 });
 
+// instantiates a route using middleware
+app.use('/corgi', (request, response, next) => {
+    response.send('Respuesta de la ruta "/corgi"'); 
+});
+
 app.use((request, response, next) => {
     console.log('Otro middleware!');
     response.send('¡Hola mundo!'); //Manda la respuesta
 });
+
+
 
 app.listen(3000);

@@ -1,4 +1,4 @@
-# NPM for website
+# Using express
 
 ## Tips
 
@@ -44,7 +44,7 @@ This creates redundancies since we just need to do npm install after cloning so 
 
 ## Middleware
 
-Express is designed as a composite pattern and you can instantiate middlewares to add new functions to our website. We can simply add middleware to add more routes and whatnot. 
+Express is designed as a composite pattern and you can instantiate middlewares to add new functions to our website. We can simply add middleware to add more routes and whatnot.
 
 ### Instantiating middle-wares
 
@@ -63,6 +63,15 @@ app.use((request, response, next) => {
 app.use((request, response, next) => {
     console.log('Middleware!');
     //stops *all* middleware
-    request.send(); 
+    response.send(); 
+});
+```
+
+### Instantiating a new route
+
+``` js
+// instantiates a route using middleware
+app.use('/corgi', (request, response, next) => {
+    response.send('Respuesta de la ruta "/corgi"'); 
 });
 ```
