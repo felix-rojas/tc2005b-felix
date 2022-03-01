@@ -75,3 +75,14 @@ app.use('/corgi', (request, response, next) => {
     response.send('Respuesta de la ruta "/corgi"'); 
 });
 ```
+
+### app.()
+
+app has different methods according to http protocol types:
+app.get
+app.post
+app.use
+
+### Re-routing
+
+Create a different file that creates and handles routes while telling the server config file
