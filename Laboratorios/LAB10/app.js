@@ -2,8 +2,8 @@ const capybaras = ["Pedro", "Poncho", "Pablo", "Patricio"];
 
 const http = require('http');
 
-const server = http.createServer( (req, resp) => {
-    
+const server = http.createServer((req, resp) => {
+
     if (req.url === '/') {
         resp.setHeader('Content-Type', 'text/html');
         resp.write('<!DOCTYPE html>');
@@ -22,7 +22,9 @@ const server = http.createServer( (req, resp) => {
         resp.write('<a href="nuevo">Agregar un nuevo capybara</a>');
         resp.write('</body>');
         resp.end();
-    } else if (req.url === '/nuevo' && req.method === 'GET') {
+    } 
+    
+    else if (req.url === '/nuevo' && req.method === 'GET') {
         resp.setHeader('Content-Type', 'text/html');
         resp.write('<!DOCTYPE html>');
         resp.write('<html lang="es-mx"><head>');
@@ -41,13 +43,16 @@ const server = http.createServer( (req, resp) => {
         resp.write('<a href="/">Regresar a la lista de capybaras</a>');
         resp.write('</body>');
         resp.end();
-    } else if (req.url === '/nuevo' && req.method === 'POST') {  
+    } 
+    
+    else if (req.url === '/nuevo' && req.method === 'POST') {
         console.log("POST");
         const datos = [];
         req.on('data', (dato) => {
             console.log(dato);
             datos.push(dato);
         });
+        
         return req.on('end', () => {
             console.log(datos);
             const datos_completos = Buffer.concat(datos).toString();
@@ -56,9 +61,6 @@ const server = http.createServer( (req, resp) => {
             console.log(nuevo_dato);
             capybaras.push(nuevo_dato);
             resp.setHeader('Content-Type', 'text/html');
-            resp.write('<!DOCTYPE html>');
-            resp.write('<html lang="es-mx"><head>');
-            resp.write('<meta charset="utf-8">');
             resp.write('<title>Capybaras</title>');
             resp.write('</head><body>');
             resp.write('<h1 id="principal">Este sitio es de capybaras</h1>');
@@ -73,7 +75,9 @@ const server = http.createServer( (req, resp) => {
             resp.write('</body>');
             return resp.end();
         });
-    } else {
+    } 
+    
+    else {
         resp.statusCode = 404;
         resp.setHeader('Content-Type', 'text/html');
         resp.write('<!DOCTYPE html>');
