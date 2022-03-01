@@ -1,9 +1,15 @@
 # NPM for website
 
-When installing npm make sure to: 
+## Tips
 
-1. Locally install the packages
+### Locally install the packages
 
 ```powershell
 npm install --save-dev nodemon
 ```
+
+Thankfully if you install locally, you'll be able to see the changes in versions to see when a update made it break.
+
+### Check the package.json
+
+### Do not version the files in node modules
