@@ -19,8 +19,19 @@ Operador binario conmutativo que disminuye la cardinalidad de las tablas (quita 
 Permite la union de tablas que no tengan relación pero utiliza una condición para unir las tablas
 Es un operador 
 
-## Natural Join 
+## Natural Join ><
 
 Complejidad n²
 
+### Ejercicio 1
 
+"Descripción de materiales con claves mayores a 200 y precio menor a 100"
+
+Sigma [ (Clave > 200 AND Precio < 100) , Materiales ]
+Pi [Descripcion, Materiales]
+
+### Ejercicio 2
+
+"Descripción de materiales que han sido entregados para el proyecto Aguascalientes"
+
+Pi {Descripción, Sigma[ Denominacion = "Aguascalientes" ((Entregan >< Materiales) >< Proyectos) ]}
