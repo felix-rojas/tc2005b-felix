@@ -2,6 +2,15 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
+const fs = require('fs');
+var stream = fs.createReadStream("front-end/index.html")
+
+
+// comment after testing
+stream.on("data", function(data) {
+    let chunk = data.toString();
+    console.log(chunk);
+});
 
 //Middleware to create server
 app.use((request, response, next) => {
@@ -19,16 +28,16 @@ app.use('/alguna-ruta', (request, response, next) => {
 // instantiates a route using middleware
 app.use('/corgi', (request, response, next) => {
     response.send('Respuesta de la ruta "/corgi"');
-    let answer = '<!DOCTYPE html><html lang="es-mx"><head><meta charset="utf-8"><title>Capybaras</title></head><body><h1 id="principal">Este sitio es de capybaras</h1><p>Tenemos los siguientes capybaras:</p>'
-    for (let i in capybaras) {
-        '<li>' + capybaras[i] + '</li>'
+    stream;
+    for (let i in dogs) {
+        stream += '<li>' + dogs[i] + '</li>'
     }
-    answer+='<br><br><a href="nuevo">Agregar un nuevo capybara</a></body>'
-    response.send(answer)
+    stream+='<br><br><a href="nuevo">Agregar un nuevo perrito</a></body>'
+    response.send(stream)
 });
 
 app.use((request, response, next) => {
-    console.log('Otro middleware!');
+    console.log('Another refresh!');
     response.send('¡Hola mundo!'); //Manda la respuesta
 });
 
