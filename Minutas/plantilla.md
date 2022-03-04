@@ -56,7 +56,6 @@ En caso de querer modificarla, haz un Fork para que puedas generar tus propias m
 * Control de vacaciones para los empleados es formal
 * Establezcan un plan de desarrollo para su proyecto para que puedan acotar las funciones requeridas
 
-
 ### Dudas para socio
 
 * ¿Cómo se conectan con Auth0?
