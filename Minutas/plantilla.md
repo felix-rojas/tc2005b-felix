@@ -48,7 +48,16 @@ En caso de querer modificarla, haz un Fork para que puedas generar tus propias m
 2. Conceptos concretados en modelo Entidad-Relación
     * Clarificar las relaciones tipo ISA y ejemplos de roles
 
-## Dudas con socio formador
+## Socio formador
+
+### Peticiones de socio
+
+* Llevar control de los NG blocks de manera informal
+* Control de vacaciones para los empleados es formal
+* Establezcan un plan de desarrollo para su proyecto para que puedan acotar las funciones requeridas
+
+
+### Dudas para socio
 
 * ¿Cómo se conectan con Auth0?
 * ¿Requieren histórico vacacional por empleado?
