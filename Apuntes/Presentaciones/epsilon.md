@@ -4,7 +4,7 @@
 
 ## Capitanes por fase
 
->En un empresa esto va a ser visto como atribución de roles. Dividir el proyecto puede dañar el desarrollo del proyecto.
+>En un empresa esto va a ser visto como atribución de roles. Dividir el proyecto puede dañar el desarrollo del proyecto. Existe el riesgo que si una persona se especializa no van a poder entregar partes del proyecto
 
 1. Planificacion -> Persona(s) encargada(s)
 2. Def requisitos
@@ -16,7 +16,13 @@
 
 * División por fases del trabajo
 
+### Sobre pruebas
+
 >Las pruebas deben de ser continuamente planteadas para completar ciclos. Es mejor dividir por actividades y requisitos para poder afinar las pruebas y llenar cada ciclo.
+
+### Sobre diseño de desarrollo
+
+>Escribir el tipo de proceso a seguir en el cronograma, diseñarlo modularmente y por iteraciones.
 
 ## Sistema interno de retroalimentación y evaluación
 
@@ -35,5 +41,25 @@ Quieren suplir las entrevistas con el sistema de recolección de feedback
 Algo que muestre cuántos han contestado, ciclo de evaluación en el que estamos
 Poder ver en gráfica segmentos poblacionales (cuántos faltan contestar, cuantos contestan)
 
-En el dashboard, es importante determinar *lo que **más** se utiliza* 
+En el dashboard, es importante determinar *lo que **más** se utiliza*
 
+Es más importante venir a escuchar, no *defenderse*
+
+El aprendizaje requiere utilizar la retroalimentación de nuestros socios formadores.
+
+>Escuchar para entender el problema
+
+## Recomendaciones
+
+1. Describir la estructura de la presentación antes de presentar
+2. Describir la problemática
+3. Enganchar audiencia
+4. Mejorar contacto visual
+5. Propuesta de solución y claridad
+6. Evitar el texto
+7. Enlistar elementos
+8. Mostrar evidencia de la ingeniería realizada
+9. Quieren ver un estatus general de lo que ha sucedido
+10. La presentación no es el momento para atender dudas
+    * Definir espacio para inquietudes
+11. Hay desconección de la problemática a la necesidad y de la necesidad al proyecto
