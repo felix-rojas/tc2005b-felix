@@ -15,6 +15,43 @@ function checkPass() {
 }
 
 
+function addToy(num){
+    switch (num) {
+        case 1:
+            jug1+=1;
+            alert("Agregado a carrito");
+            break;
+        
+        case 2:
+            jug2+=1;
+            alert("Agregado a carrito")
+            break;  
+
+        case 3:
+            jug3+=1;
+            alert("Agregado a carrito")    
+            break;
+
+        default:
+            break;
+    }
+}
+
+function mostrarCarrito(){
+    const tax = 0.125;
+    const precio1 = 25;
+    const precio2 = 50;
+    const precio3 = 100;
+    let compras = jug1*precio1+jug2*precio2+jug3*precio3;
+    let total = compras*tax + compras;
+    let venta;
+    if (confirm("Se cargarán" + total + "a su compra") == true) {
+      venta = "You pressed OK!";
+    } else {
+      venta = "Ha cancelado su compra";
+    }
+}
+
 function mostrarGato() {
     let div_imagen = document.getElementById("imagen");
     let ruta_imagen = "https://images.pexels.com/photos/1741205/pexels-photo-1741205.jpeg?auto=compress&cs=tinysrgb&w=630&h=375&dpr=1";
@@ -48,6 +85,6 @@ function mostrar_comadreja() {
 let div_comadreja = document.getElementById("comadreja");
 div_comadreja.onclick = mostrar_comadreja;
 
-document.getElementById("favorita").onkeyup = () => {
+document.getElementById("favorito").onkeyup = () => {
     document.getElementById("respuesta_favorita").innerHTML = "Vacuna tu" + document.getElementById("favorita").value + " en una veterinaria";
 }
