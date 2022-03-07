@@ -1,12 +1,25 @@
 function genImg(ruta, alt) {
-    return '<img src="' + ruta + '" alt="'+ alt + '">';
+    return '<img src="' + ruta + '" alt="' + alt + '">';
 }
+
+function checkPass() {
+    let username = 'felix@mail.com';
+    let pass = 'abc123';
+    if ((document.getElementById("username").value != username) 
+    || (document.getElementById("password").value != pass) ){
+        alert("Wrong username or password")
+    }
+    else {
+        alert("Succesful login");
+    }
+}
+
 
 function mostrarGato() {
     let div_imagen = document.getElementById("imagen");
     let ruta_imagen = "https://images.pexels.com/photos/1741205/pexels-photo-1741205.jpeg?auto=compress&cs=tinysrgb&w=630&h=375&dpr=1";
     let alt_imagen = "Imagen de gato";
-    
+
     div_imagen.innerHTML = genImg(ruta_imagen, alt_imagen);
 }
 
@@ -14,7 +27,7 @@ document.getElementById("perro").onclick = () => {
     let div_imagen = document.getElementById("imagen");
     let ruta_imagen = "https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg?auto=compress&cs=tinysrgb&w=630&h=375&dpr=1";
     let alt_imagen = "Imagen de perro";
-    
+
     div_imagen.innerHTML = genImg(ruta_imagen, alt_imagen);
 }
 
@@ -27,7 +40,7 @@ function mostrar_comadreja() {
     let div_imagen = document.getElementById("comadreja");
     let ruta_imagen = "https://images.pexels.com/photos/5403275/pexels-photo-5403275.jpeg?auto=compress&cs=tinysrgb&w=630&h=375&dpr=1";
     let alt_imagen = "Imagen de comadreja";
-    
+
     div_imagen.innerHTML = genImg(ruta_imagen, alt_imagen);
     div_comadreja.onclick = limpiar_imagen;
 }
