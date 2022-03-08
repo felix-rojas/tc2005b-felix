@@ -1,22 +1,5 @@
-console.log("hola desde node");
-
-//fs: filesystem
-const filesystem = require('fs');
-
-filesystem.writeFileSync('hola.txt', 'Hola desde node');
-
-
-const arreglo = [5000, 60, 90, 100, 10, 20, 10000, 0, 120, 2000, 340, 1000, 50];
-
-for (let item of arreglo) {
-    setTimeout(() => {
-        console.log(item);
-    }, item);
-} 
-
-
-
-const capybaras = ["Pedro", "Poncho", "Pablo", "Patricio"];
+// corgi array
+const corgis = ["Pedro", "Poncho", "Pablo", "Patricio"];
 
 const http = require('http');
 
@@ -27,36 +10,61 @@ const server = http.createServer( (request, response) => {
         response.write('<!DOCTYPE html>');
         response.write('<html lang="es-mx"><head>');
         response.write('<meta charset="utf-8">');
-        response.write('<title>Capybaras</title>');
+        response.write('<title>Corgis</title>');
         response.write('</head><body>');
-        response.write('<h1 id="principal">Este sitio es de capybaras</h1>');
-        response.write('<p>Tenemos los siguientes capybaras:</p>');
+        response.write('<h1 id="principal">Este sitio es de corgis</h1>');
+        response.write('<p>Tenemos los siguientes corgis:</p>');
         response.write('<ul>');
-        for (let i in capybaras) {
-            response.write('<li>' + capybaras[i] + '</li>');
+        for (let i in corgis) {
+            response.write('<li>' + corgis[i] + '</li>');
         }
         response.write('</ul>');
         response.write('<br><br>');
-        response.write('<a href="nuevo">Agregar un nuevo capybara</a>');
+        response.write('<a href="nuevo">Agregar un nuevo corgi</a>');
+        response.write('</body>');
+        response.end();
+    } else if (request.url === '/capybara' && request.method === 'GET') {
+        response.setHeader('Content-Type', 'text/html');
+        response.write('<!DOCTYPE html>');
+        response.write('<html lang="es-mx"><head>');
+        response.write('<title>Capybara</title>');
+        response.write('<meta charset="utf-8">');
+        response.write('</head><body>');
+        response.write('<h1 id="principal">Este sitio es de un capybara</h1>');
+        response.write('<h2>Los capybaras también se les conoce como carpinchos:</h2>');
+        response.write('<a href="/">Regresar a la lista de corgis</a>');
+        response.write('</body>');
+        response.end();
+    } else if (request.url === '/crouton' && request.method === 'GET') {
+        response.setHeader('Content-Type', 'text/html');
+        response.write('<!DOCTYPE html>');
+        response.write('<html lang="es-mx"><head>');
+        response.write('<title>crouton</title>');
+        response.write('<meta charset="utf-8">');
+        response.write('</head><body>');
+        response.write('<h1 id="principal">crouton</h1>');
+        response.write('<h2>Un croutón</h2>');
+        response.write('<a href="/">Regresar a la lista de corgis</a><br></br>');
+        response.write('<a href="https://crouton.net/">Ir al sitio de crutones oficial</a>');
         response.write('</body>');
         response.end();
     } else if (request.url === '/nuevo' && request.method === 'GET') {
         response.setHeader('Content-Type', 'text/html');
         response.write('<!DOCTYPE html>');
         response.write('<html lang="es-mx"><head>');
-        response.write('<title>Capybaras</title>');
+        response.write('<title>Corgis</title>');
         response.write('<meta charset="utf-8">');
         response.write('</head><body>');
-        response.write('<h1 id="principal">Este sitio es de capybaras</h1>');
-        response.write('<h2>Aquí nacen los capybaras:</h2>');
+        response.write('<h1 id="principal">Este sitio es de corgis</h1>');
+        response.write('<h2>Crea tu propio corgi:</h2>');
         response.write('<form action="nuevo" method="POST">');
         response.write('<label for="nombre">Nombre: </label> ');
-        response.write('<input type="text" id="nombre" name="nombre" placeholder="Pedro">');
+        response.write('<input type="text" id="nombre" name="nombre" placeholder="Palillos">');
         response.write('<br><br>');
         response.write('<input type="submit" value="Enviar">');
         response.write('</form>');
         response.write('<br><br>');
-        response.write('<a href="/">Regresar a la lista de capybaras</a>');
+        response.write('<a href="/">Regresar a la lista de corgis</a>');
         response.write('</body>');
         response.end();
     } else if (request.url === '/nuevo' && request.method === 'POST') {  
@@ -72,22 +80,22 @@ const server = http.createServer( (request, response) => {
             console.log(datos_completos);
             const nuevo_dato = datos_completos.split('=')[1];
             console.log(nuevo_dato);
-            capybaras.push(nuevo_dato);
+            corgis.push(nuevo_dato);
             response.setHeader('Content-Type', 'text/html');
             response.write('<!DOCTYPE html>');
             response.write('<html lang="es-mx"><head>');
             response.write('<meta charset="utf-8">');
-            response.write('<title>Capybaras</title>');
+            response.write('<title>Corgis</title>');
             response.write('</head><body>');
-            response.write('<h1 id="principal">Este sitio es de capybaras</h1>');
-            response.write('<p>Tenemos los siguientes capybaras:</p>');
+            response.write('<h1 id="principal">Este sitio es de corgis</h1>');
+            response.write('<p>Tenemos los siguientes corgis:</p>');
             response.write('<ul>');
-            for (let i in capybaras) {
-                response.write('<li>' + capybaras[i] + '</li>');
+            for (let i in corgis) {
+                response.write('<li>' + corgis[i] + '</li>');
             }
             response.write('</ul>');
             response.write('<br><br>');
-            response.write('<a href="nuevo">Agregar un nuevo capybara</a>');
+            response.write('<a href="nuevo">Agregar un nuevo corgi</a>');
             response.write('</body>');
             return response.end();
         });
@@ -97,9 +105,9 @@ const server = http.createServer( (request, response) => {
         response.write('<!DOCTYPE html>');
         response.write('<html><head>');
         response.write('<meta charset="utf-8">');
-        response.write('<title>Capybaras | Not found</title>');
+        response.write('<title>Corgis | Not found</title>');
         response.write('</head><body>');
-        response.write('<h1 id="principal">Este capybara no existe, amigo.</h1>');
+        response.write('<h1 id="principal">Este corgi no existe, amigo.</h1>');
         response.write('</body>');
         response.end();
     }

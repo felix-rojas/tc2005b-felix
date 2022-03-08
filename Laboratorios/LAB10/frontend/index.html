@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <nav class="nav-extended">
+    <div class="nav-wrapper black">
+      <a href="#" class="brand-logo">Website beta</a>
+    </div>
+    <div class="nav-content grey">
+      <ul class="tabs tabs-transparent">
+        <li class="tab"><a href="index.html">Old Site</a></li>
+        <li class="tab"><a class="active" href="#test2">Bootstrap</a></li>
+        <li class="tab disabled"><a href="#test3">Disabled Tab</a></li>
+        <li class="tab"><a href="#test4">Test 4</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="row center">
+    <div class="col center"><label for="favorita">¿Cuál es tu animal favorito?</label><input id="favorito" type="text"></div>
+    <div id="respuesta_favorita"></div>
+  </div>
+
+  <div class="row center">
+    <div class="col s8 m8 l8">
+      <div class="card">
+        <div class="card-image">
+          <img
+            src="https://th.bing.com/th/id/R.ea984a7be7eb55bb6b6838c3e94bcf0e?rik=fGokKvCLItlKgg&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fcorgi-transparent-background%2fcorgi-transparent-background-1.png&ehk=VbRsYuHxLH3qcGiKx0JaToXP%2fKeuFOT%2fqWjXvewro0Y%3d&risl=&pid=ImgRaw&r=0">
+          <span class="card-title">Corgi</span>
+          <a class="btn-floating halfway-fab waves-effect waves-light blue"><i class="material-icons">add</i></a>
+        </div>
+        <div class="card-content">
+          <p>This is a corgi. Pretty png.</p>
+        </div>
+        <div class="card-action">
+          <a href="https://crouton.net/" >link to a crouton</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="card">
+      <div id="gato" onclick="mostrarGato()" class="col">Gato</div>
+    </div>
+
+    <div class="card">
+      <div id="perro" class="col">Perro</div>
+    </div>
+    <div class="card">
+      <div id="comadreja" class="col">Comadreja</div>
+  </div>
+    
+  </div>
+  <div id="imagen"></div>
+
+
+
+  <!--JavaScript at end of body for optimized loading-->
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
+  <!-- Autoinitialization to properly load scripts -->
+  <script type="text/javascript">
+    window.mdc.autoInit();
+  </script>
+
+</body>
+
+</html>
