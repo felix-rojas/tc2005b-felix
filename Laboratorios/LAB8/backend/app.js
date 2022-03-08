@@ -18,6 +18,19 @@ for (let item of array) {
     }, item);
 }
 
+// array avg
+console.log(math.mean(array))
+
+let n0 = 0, n1 = 1, next_n;
+console.log('12 Fibonacci numbers: ');{
+    for (let i = 1; i <= 12; i++) {
+        console.log(n1);
+        next_n = n0+n1;
+        n0 = n1;
+        n1 = next_n;
+    }
+} 
+
 // databse reading must be async so it goes faster, it can retrieve
 // the most important data
 
@@ -26,7 +39,6 @@ const http = require('http');
 const { stringify } = require('querystring');
 
 const server = http.createServer((request, response) => {
-
     
     // with this we can see what the request object posesses
     // it also showcases how other async processes run
