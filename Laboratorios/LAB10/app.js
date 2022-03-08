@@ -1,7 +1,10 @@
 // corgi array
 const corgis = ["Pedro", "Poncho", "Pablo", "Patricio"];
-
+const fs = require('fs');
 const http = require('http');
+const util = require('util');
+const writeFile = util.promisify(fs.writeFile);
+const saveCorgis = async() => {await writeFile("corgis.txt",corgis.toString());}
 
 const server = http.createServer( (request, response) => {
     
@@ -97,6 +100,7 @@ const server = http.createServer( (request, response) => {
             response.write('<br><br>');
             response.write('<a href="nuevo">Agregar un nuevo corgi</a>');
             response.write('</body>');
+            saveCorgis();
             return response.end();
         });
     } else {
@@ -107,7 +111,7 @@ const server = http.createServer( (request, response) => {
         response.write('<meta charset="utf-8">');
         response.write('<title>Corgis | Not found</title>');
         response.write('</head><body>');
-        response.write('<h1 id="principal">Este corgi no existe, amigo.</h1>');
+        response.write('<h1 id="principal">Este corgi no existe :(.</h1>');
         response.write('</body>');
         response.end();
     }
