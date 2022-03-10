@@ -65,7 +65,7 @@ We will be using InnoDB because it has referential integrity
 * Save the url as VARCHAR so you can just extract it. 
 * Create a root user that modifies structure
 * Create a root user that connects with our system that manipulates data
-* 
+
 
 ### Ways to save FK's
 
