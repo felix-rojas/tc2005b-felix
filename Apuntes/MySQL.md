@@ -59,9 +59,13 @@ We will be using InnoDB because it has referential integrity
 
 ## Recommendations
 
-Make versions of your database scripts 
-Do *not* save images. Databases grow exponentially. Save the images in another server or in an image.
-Save the url as VARCHAR so you can just extract it. 
+* Make versions of your database scripts 
+* Do *not* save images. Databases grow exponentially. 
+* Save the images in another server or in an image.
+* Save the url as VARCHAR so you can just extract it. 
+* Create a root user that modifies structure
+* Create a root user that connects with our system that manipulates data
+* 
 
 ### Ways to save FK's
 
