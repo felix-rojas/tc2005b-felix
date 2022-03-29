@@ -16,3 +16,13 @@ Very interactive web app that runs basically like a desktop application because 
 
 >AJAX came from SilverLight, google took it back by grabbing the fundamental principles and then AJAX was created from this
 
+## How it works
+Using AJAX, you make the webapp send and receive requests on **events** such that you dont have to wait anymore for things to update because it updates the element that it was interacted with
+
+## XHR petitions
+These are petitions XML HTTP requests that are sent through
+
+## Things to watch out for
+1. Parsing of the request remember to parse queries '% + variable +%' so the query works in mysql2
+2. If it's a GET method, send the request through 
+3. If it's a POST method, send it through JSON in body
