@@ -73,11 +73,12 @@ const server = http.createServer( (request, response) => {
     } else if (request.url === '/nuevo' && request.method === 'POST') {  
         console.log("POST");
         const datos = [];
-        request.on('data', (dato) => {
+        req.on('data', (dato) => {
             console.log(dato);
             datos.push(dato);
         });
-        return request.on('end', () => {
+        
+        return req.on('end', () => {
             console.log(datos);
             const datos_completos = Buffer.concat(datos).toString();
             console.log(datos_completos);
