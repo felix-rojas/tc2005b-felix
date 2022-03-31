@@ -146,16 +146,20 @@ Recuerda que la fecha puede indicarse como '01-JAN-2000' o '01/01/00'.
 Importante: Recuerda que cuando vayas a trabajar con fechas, antes de que realices tus consultas debes ejecutar la instrucción "set dateformat dmy". Basta con que la ejecutes una sola vez para que el manejador sepa que vas a trabajar con ese formato de fechas.
 
 ¿Por qué aparecen varias veces algunas descripciones de material?
+> No se utiliza el operador distinct
 
 Uso del calificador distinct
 
 En el resultado anterior, observamos que una misma descripción de material aparece varias veces.
 
+```SQL
+SELECT DISTINCT * FROM entregan,materiales
+```
+
 Agrega la palabra distinct inmediatamente después de la palabra SELECT a la consulta que planteaste antes.
 
 ¿Qué resultado obtienes en esta ocasión?
-
-Ordenamientos.
+>Todas las tuplas sin que se repitan ninguna de las filas
 
 Si al final de una sentencia SELECT se agrega la cláusula
 
@@ -182,17 +186,23 @@ El operador LIKE se aplica a datos de tipo cadena y se usa para buscar registros
 
 También contamos con el operador comodín (%), que coincide con cualquier cadena que tenga cero o más caracteres. Este puede usarse tanto de prefijo como sufijo.
 
+```SQL
 SELECT * FROM productos WHERE Descripcion LIKE 'Si%'
+```
 
 ¿Qué resultado obtienes?
 Explica que hace el símbolo '%'.
+>Comodin que indica que la cadena puede tener cualquier caracter(es) después de dicho símbolo
 ¿Qué sucede si la consulta fuera : LIKE 'Si' ?
+>Sólo aparecerán los resultados que tengan los dos caracteres 'S' e 'i' en ese orden
 ¿Qué resultado obtienes?
-Explica a qué se debe este comportamiento.
 
 Otro operador de cadenas es el de concatenación, (+, +=) este operador concatena dos o más cadenas de caracteres.
 Su sintaxis es : Expresión + Expresión.
+
 Un ejemplo de su uso, puede ser: Un ejemplo de su uso, puede ser:
+
+```SQL
 SELECT (Apellido + ', ' + Nombre) as Nombre FROM Personas;
 
 DECLARE @foo varchar(40);
@@ -201,6 +211,7 @@ SET @foo = '¿Que resultado';
 SET @bar = ' ¿¿¿??? '
 SET @foo += ' obtienes?';
 PRINT @foo + @bar;
+```
 
 ¿Qué resultado obtienes de ejecutar el siguiente código?
 ¿Para qué sirve DECLARE?
@@ -217,9 +228,11 @@ _ - El operador _ o guion bajo, se utiliza para coincidir con un caracter de una
 
 Ahora explica el comportamiento, función y resultado de cada una de las siguientes consultas:
 
+```SQL
 SELECT RFC FROM Entregan WHERE RFC LIKE '[A-D]%';
 SELECT RFC FROM Entregan WHERE RFC LIKE '[^A]%';
 SELECT Numero FROM Entregan WHERE Numero LIKE '___6';
+```
 
 Operadores compuestos.
 
@@ -250,18 +263,21 @@ WHERE Numero Between 5000 and 5010;
 
 EXISTS Se utiliza para especificar dentro de una subconsulta la existencia de ciertas filas.
 
+```SQL
 SELECT RFC,Cantidad, Fecha,Numero
 FROM [Entregan]
 WHERE [Numero] Between 5000 and 5010 AND
 Exists ( SELECT [RFC]
 FROM [Proveedores]
 WHERE RazonSocial LIKE 'La%' and [Entregan].[RFC] = [Proveedores].[RFC] )
-
+```
 ¿Qué hace la consulta?
 ¿Qué función tiene el paréntesis ( ) después de EXISTS?
 
-IN Especifica si un valor dado tiene coincidencias con algún valor de una subconsulta. NOTA: Se utiliza dentro del WHERE pero debe contener un parametro. Ejemplo: WHERE proyecto.id IN Lista_de_Proyectos_Subquery
-
+`IN` Especifica si un valor dado tiene coincidencias con algún valor de una subconsulta. NOTA: Se utiliza dentro del `WHERE` pero debe contener un parametro. Ejemplo: 
+```SQL
+WHERE proyecto.id IN Lista_de_Proyectos_Subquery
+```
 Tomando de base la consulta anterior del EXISTS, realiza el query que devuelva el mismo resultado, pero usando el operador IN
 
 NOT Simplemente niega la entrada de un valor booleano.
@@ -271,20 +287,22 @@ Tomando de base la consulta anterior del EXISTS, realiza el query que devuelva e
 El Operador TOP, es un operador que recorre la entrada, un query, y sólo devuelve el primer número o porcentaje especifico de filas basado en un criterio de ordenación si es posible.
 
 ¿Qué hace la siguiente sentencia? Explica por qué.
-
+```SQL
 SELECT TOP 2 * FROM Proyectos
-
+```
 ¿Qué sucede con la siguiente consulta? Explica por qué.
-
+```SQL
 SELECT TOP Numero FROM Proyectos
-
+```
 Modificando la estructura de un tabla existente.
 
 Agrega a la tabla materiales la columna PorcentajeImpuesto con la instrucción:
+```SQL
 ALTER TABLE materiales ADD PorcentajeImpuesto NUMERIC(6,2);
 A fin de que los materiales tengan un impuesto, les asignaremos impuestos ficticios basados en sus claves con la instrucción:
 UPDATE materiales SET PorcentajeImpuesto = 2*clave/1000;
-esto es, a cada material se le asignará un impuesto igual al doble de su clave dividida entre diez.
+```
+Esto es, a cada material se le asignará un impuesto igual al doble de su clave dividida entre diez.
 
 Revisa la tabla de materiales para que compruebes lo que hicimos anteriormente.
 
@@ -314,6 +332,7 @@ A continuación se te dan muchos enunciados de los cuales deberás generar su co
 En el reporte incluye la sentencia, una muestra de la salida (dos o tres renglones) y el número de renglones que SQL Server reporta al final de la consulta.
 
       Los materiales (clave y descripción) entregados al proyecto "México sin ti no estamos completos".
+      !(ejercicio)[img1.png]
 
       Los materiales (clave y descripción) que han sido proporcionados por el proveedor "Acme tools".
 
