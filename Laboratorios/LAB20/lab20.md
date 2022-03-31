@@ -308,54 +308,117 @@ Revisa la tabla de materiales para que compruebes lo que hicimos anteriormente.
 
 ¿Qué consulta usarías para obtener el importe de las entregas es decir, el total en dinero de lo entregado, basado en la cantidad de la entrega y el precio del material y el impuesto asignado?
 
-Creación de vistas
+## Creación de vistas
 
 La sentencia:
 
-Create view nombrevista (nombrecolumna1 , nombrecolumna2 ,..., nombrecolumna3 )
+```SQL
+CREATE VIEW nombrevista (nombrecolumna1 , nombrecolumna2 ,..., nombrecolumna3 )
 as SELECT...
 
-Permite definir una vista. Una vista puede pensarse como una consulta etiquetada con un nombre, ya que en realidad al referirnos a una vista el DBMS realmente ejecuta la consulta asociada a ella, pero por la cerradura del álgebra relacional, una consulta puede ser vista como una nueva relación o tabla, por lo que es perfectamente válido emitir la sentencia:
-
 SELECT * FROM nombrevista
+```
 
 ¡Como si nombrevista fuera una tabla!
 
 Comprueba lo anterior, creando vistas para cinco de las consultas que planteaste anteriormente en la práctica . Posteriormente revisa cada vista creada para comprobar que devuelve el mismo resultado.
 
-La parte (nombrecolumna1,nombrecolumna2,.de la sentencia create view puede ser omitida si no hay ambigüedad en los nombres de las columnas de la sentencia SELECT asociada.
+>Vista de materiales que se han entregado 
+```SQL
+CREATE VIEW materialesEntregados as (
+      SELECT * FROM materiales,entregan
+      WHERE materiales.clave = entregan.clave)
+SELECT * FROM materialesEntregados)
+```
+>View intersección
+```SQL
+CREATE VIEW interseccion as (
+(SELECT clave FROM entregan WHERE numero=5001)
+intersect
+(SELECT clave FROM entregan WHERE numero=5018)
+)
+```
+>Intersección en dos partes
+```SQL
+CREATE VIEW interseccion1 as (
+(SELECT clave FROM entregan WHERE numero=5001)
+```
+>Parte 2
+```SQL
+CREATE VIEW interseccion2 as 
+(SELECT clave FROM entregan WHERE numero=5018)
+```
+>Integramos en nueva vista usando vistas
+```SQL
+CREATE VIEW partes as (
+interseccion1
+intersect
+interseccion2)
+```
 
-Importante: Las vistas no pueden incluir la cláusula order by.
+>Importante: Las vistas **no pueden** incluir la cláusula `order by`.
 
-A continuación se te dan muchos enunciados de los cuales deberás generar su correspondiente consulta.
 
 En el reporte incluye la sentencia, una muestra de la salida (dos o tres renglones) y el número de renglones que SQL Server reporta al final de la consulta.
 
-      Los materiales (clave y descripción) entregados al proyecto "México sin ti no estamos completos".
-      !(ejercicio)[img1.png]
+## Más ejercicios
+### EX1
+#### Los materiales (clave y descripción) entregados al proyecto "México sin ti no estamos completos".   
+```SQL
+SELECT DISTINCT m.clave, m.descripcion
+FROM materiales as m, proyectos as p, entregan as e
+WHERE e.numero = p.numero AND p.denominacion = 'Mexico sin ti no estamos completos'
+```
 
-      Los materiales (clave y descripción) que han sido proporcionados por el proveedor "Acme tools".
+### EX2
+>Los materiales (clave y descripción) que han sido proporcionados por el proveedor "Acme tools".
 
-      El RFC de los proveedores que durante el 2000 entregaron en promedio cuando menos 300 materiales.
+```SQL
+CREATE VIEW matyRFC as(
+SELECT m.clave, m.descripcion, e.rfc
+FROM materiales as m, entregan as e)
 
-      El Total entregado por cada material en el año 2000.
+CREATE VIEW acmeTools as(     
+SELECT * 
+FROM proveedores as pro
+WHERE pro.razonsocial='Acme tools')
 
-      La Clave del material más vendido durante el 2001. (se recomienda usar una vista intermedia para su solución)
+SELECT * FROM acmeTools as pro, matyRFC as m
+WHERE pro.rfc = m.rfc
+```
 
-      Productos que contienen el patrón 'ub' en su nombre.
+### EX3
+>El RFC de los proveedores que durante el 2000 entregaron en promedio cuando menos 300 materiales.
 
-      Denominación y suma del total a pagar para todos los proyectos.
+```SQL
+SELECT e.rfc 
+FROM entregan as e
+WHERE e.fecha BETWEEN '2000-01-01' AND '2000-12-31';
 
-      Denominación, RFC y RazonSocial de los proveedores que se suministran materiales al proyecto Televisa en acción que no se encuentran apoyando al proyecto Educando en Coahuila (Solo usando vistas).
+```
+### EX4
+>El Total entregado por cada material en el año 2000.
 
-      Denominación, RFC y RazonSocial de los proveedores que se suministran materiales al proyecto Televisa en acción que no se encuentran apoyando al proyecto Educando en Coahuila (Sin usar vistas, utiliza not in, in o exists).
+### EX5
+>La Clave del material más vendido durante el 2001. (se recomienda usar una vista intermedia para su solución)
 
-      Costo de los materiales y los Materiales que son entregados al proyecto Televisa en acción cuyos proveedores también suministran materiales al proyecto Educando en Coahuila.
+### EX6
+>Productos que contienen el patrón 'ub' en su nombre.
 
-      Reto: Usa solo el operador NOT IN en la consulta anterior (No es parte de la entrega).
+### EX7
+>Denominación y suma del total a pagar para todos los proyectos.
 
-      Nombre del material, cantidad de veces entregados y total del costo de dichas entregas por material de todos los proyectos.
+### EX8
+>Denominación, RFC y RazonSocial de los proveedores que se suministran materiales al proyecto Televisa en acción que no se encuentran apoyando al proyecto Educando en Coahuila (Solo usando vistas).
 
-      Muchas de estas consultas requieren la utilización de funciones agregadas...
+### EX9
+>Denominación, RFC y RazonSocial de los proveedores que se suministran materiales al proyecto Televisa en acción que no se encuentran apoyando al proyecto Educando en Coahuila (Sin usar vistas, utiliza not in, in o exists).
 
-      Se recomienda que revises nuevamente la lectura. 
+### EX10
+>Costo de los materiales y los Materiales que son entregados al proyecto Televisa en acción cuyos proveedores también suministran materiales al proyecto Educando en Coahuila.
+
+## Reto EX10
+>Usa solo el operador NOT IN en la consulta anterior (No es parte de la entrega).
+
+### EX11
+>Nombre del material, cantidad de veces entregados y total del costo de dichas entregas por material de todos los proyectos.
