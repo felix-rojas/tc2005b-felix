@@ -1,20 +1,11 @@
-// require express to use it
-const express = require('express');
-const app = express();
-const bodyParser = require('body-parser');
-const fs = require('fs');
+const express = require('express')
+const app = express()
+const port = 3000
 
-const rutas = require ('./routes/dogs.routes.js')
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
 
-//Middleware to create server
-app.use((request, response, next) => {
-    console.log('Middleware!');
-    //Le permite a la petición avanzar hacia el siguiente middleware
-    next(); 
-});
-
-app.use(bodyParser.urlencoded({extended: false}));
-app.use('/routes', rutas);
-    
-
-app.listen(3000);
+app.listen(port, () => {
+  console.log(`Webapp running on port: ${port}`)
+})
