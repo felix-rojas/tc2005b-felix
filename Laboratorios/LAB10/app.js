@@ -23,7 +23,8 @@ const server = http.createServer( (request, response) => {
         }
         response.write('</ul>');
         response.write('<br><br>');
-        response.write('<a href="nuevo">Agregar un nuevo corgi</a>');
+        response.write('<a href="nuevo">Agregar un nuevo corgi</a><br>');
+        response.write('<a href="capybara">Ver un capybara</a><br>');
         response.write('</body>');
         response.end();
     } else if (request.url === '/capybara' && request.method === 'GET') {
@@ -34,7 +35,8 @@ const server = http.createServer( (request, response) => {
         response.write('<meta charset="utf-8">');
         response.write('</head><body>');
         response.write('<h1 id="principal">Este sitio es de un capybara</h1>');
-        response.write('<h2>Los capybaras también se les conoce como carpinchos:</h2>');
+        response.write('<h2>A los capybaras también se les conoce como carpinchos</h2>');
+        response.write('<img src="https://cdn.shopify.com/s/files/1/0025/3424/4416/products/Capybara-in-frame_900x.jpg?v=1613022690" alt="Capybara formal">')
         response.write('<a href="/">Regresar a la lista de corgis</a>');
         response.write('</body>');
         response.end();
@@ -73,12 +75,12 @@ const server = http.createServer( (request, response) => {
     } else if (request.url === '/nuevo' && request.method === 'POST') {  
         console.log("POST");
         const datos = [];
-        req.on('data', (dato) => {
+        request.on('data', (dato) => {
             console.log(dato);
             datos.push(dato);
         });
         
-        return req.on('end', () => {
+        return request.on('end', () => {
             console.log(datos);
             const datos_completos = Buffer.concat(datos).toString();
             console.log(datos_completos);

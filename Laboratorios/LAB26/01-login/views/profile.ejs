@@ -3,12 +3,18 @@
   <h1 class="text-4xl mb-4">Welcome <%= user.nickname %></h1>
 
   <% if (user.picture) { %>
-    <img class="block py-3" src="<%= user.picture %>" width="300">
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="<%= user.picture %>" alt="Imagen Perfil">
+      <div class="card-body">
+        <h5 class="card-title">Bienvenido usuario <%= user.nickname %></h5>
+        <p class="card-text"><%= user.email %></p>
+        <a href="./logout" class="btn btn-primary">Logout</a>
+      </div>
+    </div>
   <% } %>
   
   <p class="py-3">
-    This is the content of <code class="bg-gray-200">req.user</code>.<br>
-    <strong>Note:</strong> <code class="bg-gray-200">_raw</code> and <code class="bg-gray-200">_json</code> properties have been omitted.
+    Estos son los datos del usuario almacenados en Auth0 <code class="bg-gray-200">req.user</code>.<br>
   </p>
 
   <pre class="block bg-gray-300 p-4 text-sm overflow-scroll"><%= userProfile %></pre>

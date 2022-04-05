@@ -8,6 +8,7 @@ router.get('/', function (req, res, next) {
   });
 });
 
+//this route now requires the user to be logged in to be able to access it
 router.get('/profile', requiresAuth(), function (req, res, next) {
   res.render('profile', {
     userProfile: JSON.stringify(req.oidc.user, null, 2),
