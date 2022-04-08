@@ -8,7 +8,8 @@ router.use((req, res, next) => {
 });
 
 router.get('/home', (req, res) => {
-    res.send('home')
+    res.send('home');
+    res.render('home.ejs')
   });
 
 
